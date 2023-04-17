@@ -1,21 +1,28 @@
-const players = ['John', 'Bob', 'Alice', 'Poppy'];
+const players = ["John", "Bob", "Alice", "Poppy"];
 
 const person = {
-      name: 'John Doe',
-      age: 80
-    };
+  name: "John Doe",
+  age: 80,
+};
 
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
-const team = players;
-const team1 = [];
-for (let khiladi of players){
-	team1.push(khiladi);
+let team =  players;
+let team1 =[];
+for(let i of players){
+	team1.push(i);
 }
-let cap1 = {...person}
+
+let cap1 = {...person};
+
+
+window.players = players;
+window.person = person;
+window.team = team;
+window.team1 = team1;
+window.cap1 = cap1;
 
 
 	
 
 
 
-export {players,person,team,team1,cap1}
